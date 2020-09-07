@@ -61,16 +61,46 @@
             </div>
         </div>
     </header>
-    <main> main
+    <main>
         <div class="main__banner">
-            <div class="banner"> .banner
-                <div class="container banner__wrapper"> .banner__wrapper
+            <div class="banner" style="">
+                <div class="container banner__wrapper">
                     <div class="row align-items-center justify-content-between">
-                        <div class="banner__offer col-lg-7"> .banner__offer
-
+                        <div class="banner__offer col-lg-7">
+                            <div class="heading">
+                                <h6 class="heading__subtitle heading__subtitle_white">
+                                    Нужна профессиональная уборка?
+                                </h6>
+                                <h1 class="heading__title heading__title_white heading__title_big">
+                                    Мы предоставим лучшие клининговые услуги для дома и офиса
+                                </h1>
+                                <button class="heading__order" type="submit">ЗАКАЗАТЬ</button>
+                            </div>
                         </div>
-                        <div class="banner__order col-lg-5"> .banner__order
-
+                        <div class="banner__order col-lg-5">
+                            <div class="order-form">
+                                <div class="order-form__wrapper">
+                                    <h4 class="order-form__heading">Узнать стоимость</h4>
+                                    <form action="#" method="POST">
+                                        <label class="order-form__label" for="">Выберите услугу</label>
+                                        <select class="order-form__input" name="selectedService" id="">
+                                            <option value="Уборка квартиры">Генеральная уборка</option>
+                                            <option value="Уборка коттеджей">Поддерживающая уборка</option>
+                                            <option value="Коммерческий клининг">Послестроительная уборка</option>
+                                        </select>
+                                        <!-- <label class="order-form__label" for="">Укажите площадь</label> -->
+                                        <input class="order-form__input" type="text" name="area" id=""
+                                            placeholder="Укажите площадь">
+                                        <!-- <label class="order-form__label" for="">Ваше имя</label> -->
+                                        <input class="order-form__input" type="text" name="userName" id=""
+                                            placeholder="Введите ваше имя">
+                                        <!-- <label class="order-form__label" for="">Ваш телефон</label> -->
+                                        <input class="order-form__input" type="tel" name="userPhone" id=""
+                                            placeholder="+7 (__) ___-___-__">
+                                        <button class="order-form__submit" type="submit">Рассчитать</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -30,4 +30,25 @@
             margin-top: 20px;
         }
     }
+
+    .heading {
+    
+        &__title {
+            font-size: 32px;
+            margin-top: 15px;
+        }
+    
+        &__title_big {
+            font-size: 36px;
+            margin-top: 25px;
+        }
+    
+        &__order {
+            display: none;
+        }
+    }
+
+    .order-form {
+        margin-top: 30px;
+    }
 }
