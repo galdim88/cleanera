@@ -1,0 +1,15 @@
+.photo-works {
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        background-color: $bg-color-2;
+    }
+
+    &__header {
+        background-color: $bg-color-1;
+    }
+
+    &__list {
+        background-color: $bg-color-1;
+    }
+}

@@ -1,0 +1,11 @@
+.order {
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        background-color: $bg-color-2;
+    }
+
+    &__form {
+        background-color: $bg-color-1;
+    }
+}

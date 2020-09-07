@@ -1,0 +1,20 @@
+/* Bootstrap sm. От 576px до 767px. Ширина container 540px. */
+@media screen and (max-width: 767px) {
+
+    .header-main {
+
+        &__phone {
+            a {
+                padding: 12px 0 !important;
+            }
+        }
+
+        &__cta {
+            margin-top: 10px !important;
+
+            a {
+                padding: 12px 0;
+            }
+        }
+    }
+}

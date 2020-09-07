@@ -1,0 +1,19 @@
+.recommendation {
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        background-color: $bg-color-2;
+    }
+
+    &__header {
+        background-color: $bg-color-1;
+    }
+
+    &__reviews {
+        background-color: $bg-color-1;
+    }
+
+    &__partners {
+        background-color: $bg-color-1;
+    }
+}

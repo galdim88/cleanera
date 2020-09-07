@@ -1,0 +1,12 @@
+/* Bootstrap lg. От 992px до 1199. Ширина container 960px. */
+@media screen and (max-width: 1199px) {
+	
+    .header-main {
+        &__phone {
+
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}

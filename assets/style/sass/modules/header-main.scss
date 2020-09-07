@@ -1,0 +1,96 @@
+.header-main {
+    padding: 20px 0;
+
+    &__logo {
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__navigation {
+        padding-left: 40px;
+    }
+
+    &__phone {
+
+        a {
+            color: $secondary-color;
+            font-size: 19px;
+            font-weight: 600;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__cta {
+
+        a {
+            display: block;
+            background-color: $primary-color;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 7px 0;
+            border: 1px solid $gray-color;
+            border-radius: 9px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+
+            &:hover {
+                text-decoration: none;
+                box-shadow: none;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+            }
+        }
+    }
+
+    &__sidenavBtn {
+        
+    }
+}
+
+.menu-btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    float: right;
+  }
+  
+  .menu-btn-wrapper {
+    display: block;
+    position: relative;
+    border: 1px solid $primary-color;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+  }
+  
+  .menu-btn-wrapper span, .menu-btn-wrapper span::before, .menu-btn-wrapper span::after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: $primary-color;
+  }
+  
+  .menu-btn-wrapper span::before, .menu-btn-wrapper span::after {
+    content: ' ';
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .menu-btn-wrapper span::before {
+    transform: translateY(-5px);
+  }
+  
+  .menu-btn-wrapper span::after {
+    transform: translateY(5px);
+  }

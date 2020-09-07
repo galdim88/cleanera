@@ -1,0 +1,33 @@
+/* Bootstrap md. От 768px до 991. Ширина container 720px. */
+@media screen and (max-width: 991px) {
+	
+    .header-main {
+
+        &__phone {
+            margin-top: 20px;
+
+            a {
+            display: block;
+            background-color: $secondary-color;
+            text-align: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 7px 0;
+            border: 1px solid $gray-color;
+            border-radius: 9px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+
+            &:hover {
+                text-decoration: none;
+                box-shadow: none;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+            }
+            }
+        }
+
+        &__cta {
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+.header-top {
+    display: flex;
+    background-color: $gray-color;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+    padding: 10px 0px;
+    font-size: .9em;
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+
+        li {
+            margin-right: 15px;
+
+            a {
+                color: $text-color;
+            }
+
+            i {
+                color: $primary-color;
+                margin-right: 5px; 
+            }
+
+            &:first-child {
+                a {
+                    color: $primary-color;
+                }
+                
+                i {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

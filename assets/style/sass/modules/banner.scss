@@ -1,0 +1,17 @@
+.banner {
+    min-height: 200px;
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        min-height: 150px;
+        background-color: $bg-color-2;
+    }
+
+    &__offer {
+        background-color: $bg-color-1;
+    }
+
+    &__order {
+        background-color: $bg-color-1;
+    }
+}

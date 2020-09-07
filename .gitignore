@@ -1,0 +1,5 @@
+#Игнорируем файл style.css.map
+style.css.map
+
+package.json
+package-lock.json

@@ -1,0 +1,15 @@
+.about {
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        background-color: $bg-color-2;
+    }
+
+    &__img {
+        background-color: $bg-color-1;
+    }
+
+    &__content {
+        background-color: $bg-color-1;
+    }
+}

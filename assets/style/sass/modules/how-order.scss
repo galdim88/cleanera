@@ -1,0 +1,19 @@
+.how-order {
+    background-color: $bg-color-1;
+
+    &__wrapper {
+        background-color: $bg-color-2;
+    }
+
+    &__header {
+        background-color: $bg-color-1;
+    }
+
+    &__stages {
+        background-color: $bg-color-1;
+    }
+
+    &__order-form {
+        background-color: $bg-color-1;
+    }
+}
