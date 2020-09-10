@@ -5,5 +5,27 @@
         padding-left: 15px;
     }
 
+    .footer-main {
     
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    
+        &__info {
+            flex-basis: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+    
+        &__hours {
+            flex-basis: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+    }
 }

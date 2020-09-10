@@ -1,0 +1,65 @@
+.limited-offer {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+
+    &__img {
+        flex-basis: 40%;
+        align-self: stretch;
+        min-height: 250px;
+        background-image: url(assets/img/limited-offer_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 9px 0 0 9px;
+    }
+
+    &__content {
+        flex-basis: 60%;
+        padding: 50px;
+    }
+
+    &__heading {
+        
+    }
+
+    &__content-title {
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    &__content-hr {
+        margin-top: 1em;
+    }
+
+    &__content-span {
+        color: $secondary-color;
+        font-weight: 600;
+    }
+
+    &__cta {
+        
+        button {
+            display: block;
+            width: 50%;
+            margin-top: 30px;
+            padding: 7px 0;
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .1);
+            background-color: $secondary-color;
+            border: 1px solid #FFFFFF;
+            border-radius: 7px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+
+            &:hover {
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+                box-shadow: none;
+            }
+        }
+    }
+}

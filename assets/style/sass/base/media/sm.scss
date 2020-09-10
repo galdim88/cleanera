@@ -17,4 +17,57 @@
             }
         }
     }
+
+    .advantages {
+        &__item {
+            flex: 100%;
+            margin-top: 30px;
+        }
+    }
+
+    .limited-offer {
+        display: flex;
+        align-items: center;
+        background-color: #FFFFFF;
+        border-radius: 9px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    
+        &__img {
+            display: none;
+        }
+
+        &__content {
+            flex-basis: 100%;
+            padding: 30px;
+
+            .heading__title {
+                font-size: 25px !important;
+                text-align: center !important;
+            }
+        }
+    
+        &__cta {
+            
+            button {
+                width: 100%;
+            }
+        }
+    }
+
+    .order {
+        &__form {
+            flex-wrap: wrap;
+        }
+
+        &__input {
+            flex-basis: 100%;
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+
+        &__submit {
+            flex-basis: 100%;
+        }
+    }
+
 }

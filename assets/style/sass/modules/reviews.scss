@@ -1,0 +1,56 @@
+.reviews {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+
+    &__item {
+        background-color: #FFFFFF;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+    }
+
+    &__author {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__author-img {
+        flex-basis: 90px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
+    }
+
+    &__author-name {
+        flex-basis: auto;
+        padding: 5px 0 0 15px;
+
+        h4 {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    }
+
+    &__text {
+        margin-top: 30px;
+        padding: 0 20px;
+        font-style: italic;
+    }
+
+    .slick-slide {
+        margin: 5px 10px;
+    }
+
+    .slick-dots{
+        top: auto;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}

@@ -1,15 +1,22 @@
 .photo-works {
-    background-color: $bg-color-1;
+    background-color: $gray-color;
 
     &__wrapper {
-        background-color: $bg-color-2;
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
 
     &__header {
-        background-color: $bg-color-1;
+        
     }
 
     &__list {
-        background-color: $bg-color-1;
+        position: relative;
+        margin-top: 35px;
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }

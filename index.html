@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Уборка квартир</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -44,10 +45,10 @@
                         </div>
                         <div class="col-lg-6 d-none d-lg-block header-main__navigation">
                             <ul class="navigation">
-                                <li><a href="#">Услуги</a></li>
-                                <li><a href="#">О нас</a></li>
-                                <li><a href="#">Фото работ</a></li>
-                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#about">О нас</a></li>
+                                <li><a href="#photo-works">Фото работ</a></li>
+                                <li><a href="#recommendation">Отзывы</a></li>
                             </ul>
                         </div>
                         <div class="col-md-6 col-lg-2 header-main__phone">
@@ -63,7 +64,7 @@
     </header>
     <main>
         <div class="main__banner">
-            <div class="banner" style="">
+            <div class="banner">
                 <div class="container banner__wrapper">
                     <div class="row align-items-center justify-content-between">
                         <div class="banner__offer col-lg-7">
@@ -106,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="main__services">
+        <div id="services" class="main__services">
             <div class="services">
                 <div class="container services__wrapper">
                     <div class="services__header">
@@ -195,86 +196,410 @@
                 </div>
             </div>
         </div>
-        <div class="main__about">
-            <div class="about"> .about
-                <div class="container about__wrapper"> .about__wrapper
-                    <div class="row">
-                        <div class="about__img col-lg-5"> .about__img
-
+        <div id="about" class="main__about">
+            <div class="about">
+                <div class="container about__wrapper">
+                    <div class="row align-items-start">
+                        <div class="about__img d-none d-lg-block col-lg-5">
+                            <img src="assets/img/about-bg.jpg" alt="О нас" srcset="">
                         </div>
-                        <div class="about__content col-lg-7"> .about__content
-
+                        <div class="about__content col-lg-7">
+                            <div class="heading">
+                                <h6 class="heading__subtitle">
+                                    О нашей компании
+                                </h6>
+                                <h3 class="heading__title">
+                                    Чистота проверенная временем.
+                                </h3>
+                            </div>
+                            <p>
+                                Мы команда профессионалов, которые трепетно заботятся о Вашей мебели и коврах. Наши
+                                опытные специалисты, справляются с загрязнениями и запахами любой сложности. MrHimchist
+                                хорошо знает специфику покрытий и используемых средств для максимального результата без
+                                повреждения тканей и кожаных покрытий, используем только самое качественное
+                                оборудование, если результат Вас не устроит - наш визит останется бесплатным Ваши
+                                проблемы - наша забота!
+                            </p>
+                            <hr>
+                            <div class="advantages">
+                                <div class="advantages__list">
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="assets/img/icons/advantage-1.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            <h5>Опытный персонал</h5>
+                                            <p>Профессиональный и опытный персонал готов помочь вам в любое
+                                                время.</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="assets/img/icons/advantage-2.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            <h5>Опытный персонал</h5>
+                                            <p>Профессиональный и опытный персонал готов помочь вам в любое
+                                                время.</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="assets/img/icons/advantage-3.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            <h5>Опытный персонал</h5>
+                                            <p>Профессиональный и опытный персонал готов помочь вам в любое
+                                                время.</p>
+                                        </div>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="assets/img/icons/advantage-4.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            <h5>Опытный персонал</h5>
+                                            <p>Профессиональный и опытный персонал готов помочь вам в любое
+                                                время.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main__photo-works">
-            <div class="photo-works"> .photo-works
-                <div class="container photo-works__wrapper"> .photo-works__wrapper
-                    <div class="photo-works__header"> .photo-works__header
-
+        <div id="photo-works" class="main__photo-works">
+            <div class="photo-works">
+                <div class="container photo-works__wrapper">
+                    <div class="photo-works__header">
+                        <div class="services__header">
+                            <div class="heading heading_center">
+                                <h6 class="heading__subtitle heading__subtitle_center">
+                                    Наши работы
+                                </h6>
+                                <!-- <h3 class="heading__title">
+                                    Фотографии "До" и "После"
+                                </h3> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="photo-works__list"> .photo-works__list
-
+                    <div class="photo-works__list">
+                        <div><img src="assets/img/examples/examples-1.jpg" alt="" srcset=""></div>
+                        <div><img src="assets/img/examples/examples-2.jpg" alt="" srcset=""></div>
+                        <div><img src="assets/img/examples/examples-3.jpg" alt="" srcset=""></div>
+                        <div><img src="assets/img/examples/examples-4.jpg" alt="" srcset=""></div>
+                        <div><img src="assets/img/examples/examples-5.jpg" alt="" srcset=""></div>
+                        <div><img src="assets/img/examples/examples-6.jpg" alt="" srcset=""></div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="main__how-order">
-            <div class="how-order"> .how-order
-                <div class="container how-order__wrapper"> .how-order__wrapper
-                    <div class="how-order__header"> .how-order__header
-
+            <div class="how-order">
+                <div class="container how-order__wrapper">
+                    <div class="how-order__header">
+                        <div class="heading heading_center">
+                            <h6 class="heading__subtitle heading__subtitle_center heading__subtitle_white">
+                                Как заказать уборку
+                            </h6>
+                            <h1 class="heading__title heading__title_white">
+                                4 простых шага
+                            </h1>
+                        </div>
                     </div>
-                    <div class="how-order__stages"> .how-order__stages
-
+                    <div class="how-order__stages">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="how-order__stage">
+                                    <img src="assets/img/how-work/how_work_step-1.png" alt="">
+                                    <h4>Обсуждаем детали</h4>
+                                    <hr />
+                                    <p>Just provide us the timing you want and we will set our schedule
+                                        according to your need.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="how-order__stage">
+                                    <img src="assets/img/how-work/how_work_step-2.png" alt="">
+                                    <h4>Обсуждаем детали</h4>
+                                    <hr />
+                                    <p>Just provide us the timing you want and we will set our schedule
+                                        according to your need.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="how-order__stage">
+                                    <img src="assets/img/how-work/how_work_step-3.png" alt="">
+                                    <h4>Обсуждаем детали</h4>
+                                    <hr />
+                                    <p>Just provide us the timing you want and we will set our schedule
+                                        according to your need.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="how-order__stage">
+                                    <img src="assets/img/how-work/how_work_step-4.png" alt="">
+                                    <h4>Обсуждаем детали</h4>
+                                    <hr />
+                                    <p>Just provide us the timing you want and we will set our schedule
+                                        according to your need.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="how-order__order-form"> .how-order__order-form
-
+                    <div class="how-order__order-form">
+                        <div class="limited-offer">
+                            <div class="limited-offer__img">
+                                <img src="" alt="">
+                            </div>
+                            <div class="limited-offer__content">
+                                <div class="heading">
+                                    <h6 class="heading__subtitle d-none d-md-block">
+                                        Ограниченное предложение
+                                    </h6>
+                                    <h3 class="heading__title limited-offer__content-title">
+                                        Закажите уборку прямо сейчас и получите <span
+                                            class="limited-offer__content-span">скидку 5%</span>
+                                    </h3>
+                                    <hr class="limited-offer__content-hr">
+                                    <div class="limited-offer__cta">
+                                        <button type="submit">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main__recommendation">
-            <div class="recommendation"> .recommendation
-                <div class="container recommendation__wrapper"> .recommendation__wrapper
-                    <div class="recommendation__header"> .recommendation__header
-
+        <div id="recommendation" class="main__recommendation">
+            <div class="recommendation">
+                <div class="container recommendation__wrapper">
+                    <div class="heading heading_center">
+                        <h6 class="heading__subtitle heading__subtitle_center">
+                            Клиенты о нас
+                        </h6>
                     </div>
-                    <div class="recommendation__reviews"> .recommendation__reviews
-
+                    <div class="recommendation__reviews">
+                        <div class="reviews">
+                            <div class="reviews__item">
+                                <div class="reviews__author">
+                                    <div class="reviews__author-img">
+                                        <img src="assets/img/reviews/author-1.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4>Пако Матьего</h4>
+                                        <p>Ультрасексуал</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="reviews__text">
+                                    <p>
+                                        "Мы, мужики, придумали себе 3 вещи, которые халява. Что у нас? Я за свою
+                                        жизнь должен дерево посадить, сына вырастить и дом построить. Дерево
+                                        растёт само, сына рожает другой человек, дом строят люди из ближайшего
+                                        зарубежья."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__author">
+                                    <div class="reviews__author-img">
+                                        <img src="assets/img/reviews/author-2.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4>Эмма Стоун</h4>
+                                        <p>Милаха</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="reviews__text">
+                                    <p>
+                                        "Вы, мужики, придумали себе 3 вещи, которые халява. Что у вас? Ты за
+                                        свою
+                                        жизнь должен дерево посадить, сына вырастить и дом построить. Дерево
+                                        растёт само, сына рожает другой человек, дом строят люди из ближайшего
+                                        зарубежья."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__author">
+                                    <div class="reviews__author-img">
+                                        <img src="assets/img/reviews/author-1.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4>Пако Матьего</h4>
+                                        <p>Ультрасексуал</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="reviews__text">
+                                    <p>
+                                        "Мы, мужики, придумали себе 3 вещи, которые халява. Что у нас? Я за свою
+                                        жизнь должен дерево посадить, сына вырастить и дом построить. Дерево
+                                        растёт само, сына рожает другой человек, дом строят люди из ближайшего
+                                        зарубежья."
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reviews__item">
+                                <div class="reviews__author">
+                                    <div class="reviews__author-img">
+                                        <img src="assets/img/reviews/author-2.jpg" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4>Эмма Стоун</h4>
+                                        <p>Милаха</p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="reviews__text">
+                                    <p>
+                                        "Вы, мужики, придумали себе 3 вещи, которые халява. Что у вас? Ты за
+                                        свою
+                                        жизнь должен дерево посадить, сына вырастить и дом построить. Дерево
+                                        растёт само, сына рожает другой человек, дом строят люди из ближайшего
+                                        зарубежья."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="recommendation__partners"> .recommendation__partners
-
+                    <div class="heading heading_center">
+                        <h6 class="heading__subtitle heading__subtitle_center">
+                            Наши партнеры
+                        </h6>
+                        <hr>
+                    </div>
+                    <div class="recommendation__partners">
+                        <div class="partners">
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-1.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-2.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-3.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-4.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-1.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-2.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-3.jpg" alt="">
+                            </div>
+                            <div class="partners__item">
+                                <img src="assets/img/partners/partner-4.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="main__faq">
-            <div class="faq"> .faq
-                <div class="container faq__wrapper"> .faq__wrapper
-                    <div class="faq__header"> .faq__header
-
+            <div class="faq">
+                <div class="container faq__wrapper">
+                    <div class="faq__header">
+                        <div class="heading heading_center">
+                            <h6 class="heading__subtitle heading__subtitle_center">
+                                Ответы на вопросы
+                            </h6>
+                        </div>
                     </div>
-                    <div class="faq__list"> .faq__list
-
+                    <div class="faq__list">
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <p>Вопрос номeр 1</p>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                    facilis magni voluptate asperiores iusto doloremque iure
+                                    laudantium excepturi quos veniam alias fugit, molestiae numquam
+                                    ad saepe cum repellat totam deleniti. 1</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <p>Вопрос номeр 2</p>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                    facilis magni voluptate asperiores iusto doloremque iure
+                                    laudantium excepturi quos veniam alias fugit, molestiae numquam
+                                    ad saepe cum repellat totam deleniti. 1</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <p>Вопрос номeр 3</p>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                    facilis magni voluptate asperiores iusto doloremque iure
+                                    laudantium excepturi quos veniam alias fugit, molestiae numquam
+                                    ad saepe cum repellat totam deleniti. 1</p>
+                            </div>
+                        </div>
+                        <div class="faq__item">
+                            <div class="faq__question">
+                                <p>Вопрос номeр 4</p>
+                            </div>
+                            <div class="faq__answer">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                                    facilis magni voluptate asperiores iusto doloremque iure
+                                    laudantium excepturi quos veniam alias fugit, molestiae numquam
+                                    ad saepe cum repellat totam deleniti. 1</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="main__order">
-            <div class="order"> .order
-                <div class="container order_wrapper"> .order__wrapper
-                    <div class="order__form"> .order__form
-
+            <div class="order">
+                <div class="container order__wrapper">
+                    <div class="order__header">
+                        <div class="heading">
+                            <h3 class="heading__title heading__title_white">
+                                Получите бесплатную консультацию
+                            </h3>
+                        </div>
                     </div>
+                    <form class="order__form" method="POST">
+                        <input class="order__input" type="text" name="userName" id="" placeholder="Введите ваше имя">
+                        <input class="order__input" type="tel" name="userPhone" id="" placeholder="+7 (__) ___-___-__">
+                        <button class="order__submit" type="submit">Рассчитать</button>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
-    <footer> footer
-
+    <footer>
+        <div class="footer-main">
+            <div class="container footer-main__wrapper">
+                <div class="footer-main__info">
+                    <a href="tel:+79632156557" class="footer-main__info-phone"><i class="fa fa-phone"></i>
+                        +7(963)215-65-57</a><br />
+                    <a href="mailto:info@cleanera.ru" class="footer-main__info-email"><i class="fa fa-envelope"></i>
+                        info@cleanera.ru</a>
+                </div>
+                <div class="footer-main__hours">
+                    <p>Режим работы: <br /> <span class="time">ежедневно с 8:00 до 22:00</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2020 Клининговая компания Cleanera</p>
+        </div>
     </footer>
 
     <div class="sidenav">
@@ -290,6 +615,7 @@
     </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 

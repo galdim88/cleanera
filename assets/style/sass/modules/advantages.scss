@@ -1,0 +1,35 @@
+.advantages {
+    
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    &__item {
+        flex: 50%;
+        margin-top: 30px;
+    }
+    
+    &__item-img {
+        display: block;
+        width: 25%;
+        float: left;
+    }
+    
+    &__item-text {
+        display: block;
+        width: 75%;
+        float: right;
+        padding-right: 12px;
+    
+        h5 {
+            font-weight: 600;
+        }
+    
+        p {
+            font-size: 13px;
+        }
+    }
+}
