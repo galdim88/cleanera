@@ -621,7 +621,9 @@ footer {
   height: 100%;
   position: fixed;
   padding-top: 70px;
-  background-color: #E3E3E3;
+  background-color: #00affe;
+  overflow: auto;
+  z-index: 1;
 }
 .sidenav__close {
   position: absolute;
@@ -643,6 +645,45 @@ footer {
 }
 .sidenav__close:focus {
   outline: none;
+}
+.sidenav__menu {
+  list-style: none;
+  margin-top: 30px;
+}
+.sidenav__menu li {
+  border-bottom: 2px solid rgba(155, 223, 255, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.sidenav__menu li:hover {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.sidenav__menu li:first-child {
+  border-top: 2px solid rgba(155, 223, 255, 0.2);
+}
+.sidenav__menu li a {
+  display: block;
+  padding: 10px 30px;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.sidenav__menu li a:hover {
+  text-decoration: none;
+}
+.sidenav__info {
+  margin-top: 40px;
+  padding: 0 30px;
+  list-style: none;
+  color: #FFFFFF;
+}
+.sidenav__info li {
+  margin-bottom: 15px;
+}
+.sidenav__info li a, .sidenav__info li i {
+  color: #FFFFFF;
+}
+.sidenav__info li i {
+  margin-right: 10px;
 }
 
 .order-form__wrapper {

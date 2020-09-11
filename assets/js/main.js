@@ -1,5 +1,5 @@
 // Вызов бокового меню
-var menuBtn = document.querySelectorAll(".sidenavActive");
+var menuBtn = document.querySelectorAll(".menu-btn");
 for (let i = 0; i < menuBtn.length; i++) {
     menuBtn[i].addEventListener("click", function () {
         var sidenav = document.querySelector(".sidenav");
