@@ -7,6 +7,7 @@
     <title>Уборка квартир</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/jquery-modal/jquery.modal.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -55,7 +56,7 @@
                             <a href="tel:+79632156557">+7(963)215-65-57</a>
                         </div>
                         <div class="col-md-6 col-lg-2 header-main__cta">
-                            <a href="#">Заказать</a>
+                            <a href="#modal-order" rel="modal:open">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -624,7 +625,23 @@
         </div>
     </div>
 
+    <div id="modal-order" class="modal modal-order">
+        <div class="modal-order__header">
+            <h4>Узнать стоимость</h4>
+        </div>
+        <div class="modal-order__form">
+            <form action="#" method="POST">
+                <label class="modal-order__label" for="">Ваше имя</label>
+                <input class="modal-order__input" type="text" name="userName" id="" placeholder="Введите ваше имя">
+                <label class="modal-order__label" for="">Ваш телефон</label>
+                <input class="modal-order__input" type="tel" name="userPhone" id="" placeholder="+7 (__) ___-___-__">
+                <button class="modal-order__submit" type="submit">Рассчитать</button>
+            </form>
+        </div>
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery-modal/jquery.modal.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
