@@ -90,13 +90,10 @@
                                             <option value="Уборка коттеджей">Поддерживающая уборка</option>
                                             <option value="Коммерческий клининг">Послестроительная уборка</option>
                                         </select>
-                                        <!-- <label class="order-form__label" for="">Укажите площадь</label> -->
                                         <input class="order-form__input" type="text" name="area" id=""
                                             placeholder="Укажите площадь">
-                                        <!-- <label class="order-form__label" for="">Ваше имя</label> -->
                                         <input class="order-form__input" type="text" name="userName" id=""
                                             placeholder="Введите ваше имя">
-                                        <!-- <label class="order-form__label" for="">Ваш телефон</label> -->
                                         <input class="order-form__input" type="tel" name="userPhone" id=""
                                             placeholder="+7 (__) ___-___-__">
                                         <button class="order-form__submit" type="submit">Рассчитать</button>
@@ -139,10 +136,10 @@
                                         Время уборки: <span>от 1 часа</span>
                                     </div>
                                     <div class="services__item-included">
-                                        <button type="submit">Что входит</button>
+                                        <a href="#modal-included" rel="modal:open">Что входит</a>
                                     </div>
                                     <div class="services__item-order">
-                                        <button type="submit">Заказать</button>
+                                        <a href="#modal-order" rel="modal:open">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -162,10 +159,10 @@
                                         Время уборки: <span>от 1 часа</span>
                                     </div>
                                     <div class="services__item-included">
-                                        <button type="submit">Что входит</button>
+                                        <a href="#modal-included" rel="modal:open">Что входит</a>
                                     </div>
                                     <div class="services__item-order">
-                                        <button type="submit">Заказать</button>
+                                        <a href="#modal-order" rel="modal:open">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -185,10 +182,10 @@
                                         Время уборки: <span>от 1 часа</span>
                                     </div>
                                     <div class="services__item-included">
-                                        <button type="submit">Что входит</button>
+                                        <a href="#modal-included" rel="modal:open">Что входит</a>
                                     </div>
                                     <div class="services__item-order">
-                                        <button type="submit">Заказать</button>
+                                        <a href="#modal-order" rel="modal:open">Заказать</a>
                                     </div>
                                 </div>
                             </div>
@@ -637,6 +634,67 @@
                 <input class="modal-order__input" type="tel" name="userPhone" id="" placeholder="+7 (__) ___-___-__">
                 <button class="modal-order__submit" type="submit">Рассчитать</button>
             </form>
+        </div>
+    </div>
+    <div id="modal-included" class="modal modal-included">
+        <div class="modal-included__header">
+            <h4>Что входит в уборку</h4>
+        </div>
+        <div class="modal-included__table">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Поддерживающая</th>
+                        <th>Генеральная</th>
+                        <th>Послестроительная</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Обеспыливаем</td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                    </tr>
+                    <tr>
+                        <td>Протираем поверхности</td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                    </tr>
+                    <tr>
+                        <td>Моем пол</td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                        <td class="yes"></td>
+                    </tr>
+                    <tr>
+                        <td>Собираем мелкий мусор</td>
+                        <td class="no"><span ></span></td>
+                        <td class="yes"></td>
+                        <td class="yes"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Выносим мелкий мусор</td>
+                        <td class="no"><span ></span></td>
+                        <td class="yes"></td>
+                        <td class="yes"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Собираем строительный мусор</td>
+                        <td class="no"><span ></span></td>
+                        <td class="no"></td>
+                        <td class="yes"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Выносим строительный мусор</td>
+                        <td class="no"><span ></span></td>
+                        <td class="no"></td>
+                        <td class="yes"></span></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 

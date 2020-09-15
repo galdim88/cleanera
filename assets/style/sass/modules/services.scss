@@ -62,7 +62,7 @@
     &__item-included {
         margin-top: 20px;
 
-        button {
+        a {
             display: block;
             width: 85%;
             margin: 0 auto;
@@ -76,6 +76,7 @@
             box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
 
             &:hover {
+                text-decoration: none;
                 text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
                 box-shadow: -1px -1px 1px rgba(0, 0, 0, .1);
             }
@@ -85,7 +86,7 @@
     &__item-order {
         margin-top: 15px;
 
-        button {
+        a {
             display: block;
             width: 85%;
             margin: 0 auto;
@@ -99,6 +100,7 @@
             box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
 
             &:hover {
+                text-decoration: none;
                 text-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
                 box-shadow: -1px -1px 1px rgba(0, 0, 0, .1);
             }

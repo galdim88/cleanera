@@ -40,7 +40,7 @@ $("document").ready(function () {
         // Отображаем точки (true | false def:false)
         dots: true,
         // Количество отображаемых слайдов (number def:1)
-        slidesToShow: 2,
+        slidesToShow: 1,
         // Количество пролистываемых слайдов (number def:1)
         slidesToScroll: 1,
         // Отвечает за скорость пролистывания слайдев в милисекундах (number def:300) 
