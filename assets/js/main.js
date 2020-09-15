@@ -14,9 +14,9 @@ for (let i = 0; i < sidenavClose.length; i++) {
     });
 }
 
-document.addEventListener("scroll", function() {
+document.addEventListener("scroll", function () {
     var body = document.querySelector("body");
-    if(body.offsetWidth < 992) {
+    if (body.offsetWidth < 992) {
         var scrY = window.scrollY;
         if (scrY > 200) {
             console.log("Хуяк достали мобильный фиксированный хеадер");
@@ -132,10 +132,30 @@ $("document").ready(function () {
     });
 
     // FAQ logic
-    $('.faq__item').click(function() {
+    $('.faq__item').click(function () {
         $(this).children('.faq__question').toggleClass('faq__question_active');
         $(this).children('.faq__answer').slideToggle();
     });
 
-
+    // JS для отправки ajax-запроса из форм сайта
+    $("form").submit(function () {
+        // Получение ID формы
+        var formID = $(this).attr('id');
+        // Добавление решётки к имени ID
+        var formNm = $('#' + formID);
+        $.ajax({
+            type: "POST",
+            url: 'assets/mail.php',
+            data: formNm.serialize(),
+            success: function (data) {
+                // Вывод текста результата отправки
+                $(formNm).html(data);
+            },
+            error: function (jqXHR, text, error) {
+                // Вывод текста ошибки отправки
+                $(formNm).html(error);
+            }
+        });
+        return false;
+    }); // Конец JS для отправки ajax-запроса из форм сайта
 });

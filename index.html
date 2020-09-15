@@ -83,7 +83,7 @@
                             <div class="order-form">
                                 <div class="order-form__wrapper">
                                     <h4 class="order-form__heading">Узнать стоимость</h4>
-                                    <form action="#" method="POST">
+                                    <form id="order-form" method="POST">
                                         <label class="order-form__label" for="">Выберите услугу</label>
                                         <select class="order-form__input" name="selectedService" id="">
                                             <option value="Уборка квартиры">Генеральная уборка</option>
@@ -97,6 +97,7 @@
                                         <input class="order-form__input" type="tel" name="userPhone" id=""
                                             placeholder="+7 (__) ___-___-__">
                                         <button class="order-form__submit" type="submit">Рассчитать</button>
+                                        <input type="hidden" name="formName" value="Заказ. Cleanera. Форма на баннере">
                                     </form>
                                 </div>
                             </div>
@@ -671,25 +672,25 @@
                     </tr>
                     <tr>
                         <td>Собираем мелкий мусор</td>
-                        <td class="no"><span ></span></td>
+                        <td class="no"><span></span></td>
                         <td class="yes"></td>
                         <td class="yes"></span></td>
                     </tr>
                     <tr>
                         <td>Выносим мелкий мусор</td>
-                        <td class="no"><span ></span></td>
+                        <td class="no"><span></span></td>
                         <td class="yes"></td>
                         <td class="yes"></span></td>
                     </tr>
                     <tr>
                         <td>Собираем строительный мусор</td>
-                        <td class="no"><span ></span></td>
+                        <td class="no"><span></span></td>
                         <td class="no"></td>
                         <td class="yes"></span></td>
                     </tr>
                     <tr>
                         <td>Выносим строительный мусор</td>
-                        <td class="no"><span ></span></td>
+                        <td class="no"><span></span></td>
                         <td class="no"></td>
                         <td class="yes"></span></td>
                     </tr>
