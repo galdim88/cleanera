@@ -37,15 +37,19 @@
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-    background-image: url(/assets/img/arrow-back.svg);
+    background: url(/assets/img/arrow-back.svg), rgba(245, 245, 245, 0.9);
     bottom: 20px;
     right: 75px;
+    border-radius: 30% 0 0 30%;
+    outline: none;
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next {
-    background-image: url(/assets/img/arrow-forward.svg);
+    background: url(/assets/img/arrow-forward.svg), rgba(245, 245, 245, 0.9);
     bottom: 20px;
     right: 20px;
+    border-radius: 0 30% 30% 0;
+    outline: none;
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled {

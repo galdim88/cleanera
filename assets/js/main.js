@@ -143,6 +143,9 @@ $("document").ready(function () {
         var formID = $(this).attr('id');
         // Добавление решётки к имени ID
         var formNm = $('#' + formID);
+        // !
+        console.log(formNm.serializeArray());
+        // !
         $.ajax({
             type: "POST",
             url: 'assets/mail.php',
@@ -158,4 +161,17 @@ $("document").ready(function () {
         });
         return false;
     }); // Конец JS для отправки ajax-запроса из форм сайта
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 300);
+        return false;
+    });
 });

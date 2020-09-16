@@ -48,7 +48,7 @@
     
         &__cta {
             
-            button {
+            a {
                 width: 100%;
             }
         }
@@ -79,4 +79,8 @@
         }
     }
 
+    .scrollup {
+        right: 15px;
+        bottom: 15px;
+    }
 }
